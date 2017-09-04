@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <form class="form-signin" ng-submit="login(user);">
+        <h4 style="color: red;">{{ErrorMsg.message}}</h4>
+        <h4 style="color: green;">admin / admin</h4>
+        <h2 class="form-signin-heading">Please login</h2>
+        <input type="text" class="form-control" ng-model="user.username" placeholder="Email Address" required="" autofocus="" /><br/>
+        <input type="password" class="form-control" ng-model="user.password" placeholder="Password" required=""/>
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    </form>
+</div>
